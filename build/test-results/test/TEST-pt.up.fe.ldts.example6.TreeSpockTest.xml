@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="pt.up.fe.ldts.example6.TreeSpockTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-23T15:57:38" hostname="LAPTOP-FJJGB00Q" time="0.085">
+<testsuite name="pt.up.fe.ldts.example6.TreeSpockTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-11-29T08:49:49" hostname="LAPTOP-FJJGB00Q" time="0.196">
   <properties/>
-  <testcase name="Tree Creation" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.018"/>
-  <testcase name="Tree Set Location" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.002"/>
-  <testcase name="Tree to String" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.018"/>
-  <testcase name="Add Appraisal" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.022"/>
-  <testcase name="Next Appraisal Overdue" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.024"/>
-  <testcase name="Next Appraisal Not Overdue" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.0"/>
+  <testcase name="Tree Creation" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.028"/>
+  <testcase name="Tree Set Location" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.008"/>
+  <testcase name="Tree to String" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.059"/>
+  <testcase name="Add Appraisal" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.025"/>
+  <testcase name="Next Appraisal Overdue" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.07"/>
+  <testcase name="Next Appraisal Not Overdue" classname="pt.up.fe.ldts.example6.TreeSpockTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
