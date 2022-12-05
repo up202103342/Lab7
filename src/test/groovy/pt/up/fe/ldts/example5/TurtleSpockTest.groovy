@@ -6,31 +6,31 @@ class TurtleSpockTest extends Specification {
 
     def 'Rotate Left'() {
         given:
-            def turtle = new Turtle(5, 5, 'N' as char);
+            def turtle = new Turtle(5, 5, new TurtleNorth());
 
         when:
             turtle.execute('L' as char);
 
         then:
-            'W' == turtle.getDirection()
+            'W' == turtle.getStateChar()
 
         and:
             turtle.execute('L' as char);
 
         then:
-            'S' == turtle.getDirection()
+            'S' == turtle.getStateChar()
 
         and:
             turtle.execute('L' as char);
 
         then:
-            'E' == turtle.getDirection()
+            'E' == turtle.getStateChar()
 
         and:
             turtle.execute('L' as char);
 
         then:
-            'N' == turtle.getDirection()
+            'N' == turtle.getStateChar()
 
         and:
             5 == turtle.getRow()
@@ -39,31 +39,31 @@ class TurtleSpockTest extends Specification {
 
     def 'Rotate Right'() {
         given:
-            def turtle = new Turtle(5, 5, 'N' as char);
+            def turtle = new Turtle(5, 5, new TurtleNorth());
 
         when:
             turtle.execute('R' as char);
 
         then:
-            'E' == turtle.getDirection()
+            'E' == turtle.getStateChar()
 
         and:
             turtle.execute('R' as char);
 
         then:
-            'S' == turtle.getDirection()
+            'S' == turtle.getStateChar()
 
         and:
             turtle.execute('R' as char);
 
         then:
-            'W' == turtle.getDirection()
+            'W' == turtle.getStateChar()
 
         and:
             turtle.execute('R' as char);
 
         then:
-            'N' == turtle.getDirection()
+            'N' == turtle.getStateChar()
 
         and:
             5 == turtle.getRow()
@@ -72,10 +72,10 @@ class TurtleSpockTest extends Specification {
 
     def 'Forward'() {
         given:
-            def turtleN = new Turtle(5, 5, 'N' as char)
-            def turtleW = new Turtle(5, 5, 'W' as char);
-            def turtleS = new Turtle(5, 5, 'S' as char);
-            def turtleE = new Turtle(5, 5, 'E' as char);
+            def turtleN = new Turtle(5, 5, new TurtleNorth())
+            def turtleW = new Turtle(5, 5, new TurtleWest());
+            def turtleS = new Turtle(5, 5, new TurtleSouth());
+            def turtleE = new Turtle(5, 5, new TurtleEast());
 
         when:
             turtleN.execute('F' as char)
